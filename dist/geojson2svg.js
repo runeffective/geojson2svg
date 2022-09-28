@@ -55,7 +55,7 @@ var multi = require('multigeojson');
 function getCoordString(coords,res,origin, precision) {
   //origin - svg image origin
   var convertedCoords = coords.map(function(coord) {
-    return [(coord[0] - origin.x)/res, (origin.y - coord[1])/res];
+    return [(coord[0] - origin.x)/res, (coord[1] - origin.y)/res];
   });
   var coordStr = convertedCoords.map(function (coord) {
     if (precision) {
