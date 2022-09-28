@@ -1,4 +1,4 @@
-declare namespace geojson2svg {
+declare module 'geojson2svg' {
   import { GeoJSON } from "geojson";
 
   export interface ScreenDims {
